@@ -1,0 +1,16 @@
+A classe "Surface" é responsável por desenhar uma superfície representada por triângulos dispostos em formato de grade. A altura dos vértices dessa grade é calculado usando a função seno como parâmetro, fazendo ondulações na superfície. As propriedades dessa onda podem ser modificados pelo teclado:
+
+tecla 'a' ou 'A' - Diminui ou aumenta a altura da onda
+tecla 'c' ou 'C' - Diminui ou aumenta o comprimento da onda
+tecla 'v' ou 'V' - Diminui ou aumenta a velocidade de movimento da onda
+
+A quantidade de triângulos que formam a superfície pode ser modificado alterando a quantidade de divisões da grade. Essa quantidade pode ser modificada pelo teclado:
+
+tecla 'd' ou 'D' - Diminui ou aumenta a quantidade de divisões da grade (quantidade de triângulos da superfície)
+
+A classe FonteLuz é responsável por implementar uma fonte de luz pontual simples. Ela possui um método para calcular a iluminação em um ponto particular usando o Modelo de Iluminação de Phong.
+
+Atenção que várias coisas não foram implementadas:
+- O programa não possui diferentes de fontes de luz, como spot light ou luz direcional nem ilumina a superfície com mais de uma fonte de luz.
+- O sombreamento é flat. Não há sombreamento Gouraud (que geraria resultados melhores)
+- A superfície não é transformada por nenhuma matriz de transformação (ex: translação, rotação ou escala). Caso alguma transformação tivesse sido aplicada, o resultado seria incorreto.

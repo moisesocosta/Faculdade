@@ -1,0 +1,199 @@
+.topo{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.topo h1{
+    padding-top: 17px;
+    font-size: 50px;
+    margin-top: -15px;
+}
+
+.topo p{
+    font-size: 20px;
+    color: rgb(75, 75, 75);
+}
+
+.container{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px auto 0 30px;
+    width: 100%;
+}
+
+.container h5{
+    font-size: 20px;
+}
+
+.container p{
+    color: rgb(75, 75, 75);
+    font-size: 17px;
+}
+
+.container .servicos{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.container .servicos .item .circulo{
+    background-color: rgb(208, 208, 208);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .servicos .item{
+    display: flex;
+    align-items: center;
+}
+
+.container .servicos .item .circulo .icon{
+    width: 40px;
+    height: 40px;
+    padding: 30px;
+}
+
+.container .servicos .item .texto{
+    padding-left: 20px;
+}
+
+.container .empresa img{
+    width: auto;
+    height: auto;
+    max-width: 542px;
+    max-height: 500px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media screen and (max-width: 1629px){
+    html{
+        font-size: 14px;
+    }
+
+    .container .empresa img{
+        max-width: 400px;
+        max-height: auto;
+    }
+
+    .container .serviços .item .texto h5{
+        font-size: 16px;
+    }
+
+    .container .serviços .item .texto p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1490px){
+    html{
+        font-size: 12px;
+    }
+
+    .container .serviços{
+        padding-left: 250px;
+    }
+
+    .container .empresa{
+        padding-right: 250px;
+    }
+
+    .container .empresa img{
+        max-width: 300px;
+        max-height: auto;
+    }
+
+    .container .serviços .item .texto h5{
+        font-size: 14px;
+    }
+
+    .container .serviços .item .texto p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1220px){
+    .container{
+        grid-template-areas: 
+            "serviços"
+            "empresa";
+            margin: 0 auto;
+            max-width: 100%;
+    }
+
+    .container .serviços{
+        display: inline-flex;
+        padding-top: 20px;
+        text-align: justify;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .container .serviços .item{
+        display: grid;
+    }
+
+    .container .serviços .item .circulo{
+        margin: 0 auto;
+    }
+
+    .container .serviços .item .texto h5{
+        text-align: center;
+    }
+
+    .container .empresa{
+        margin: 0 auto;
+        padding-right: 0;
+        order: -1;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .topo{
+        width: 90%;
+    }
+
+    .container .serviços{
+        display: grid;
+        padding-top: 20px;
+        text-align: justify;
+    }
+
+    .container .serviços .item{
+        display: flex;
+    }
+
+    .container .serviços .item .texto h5{
+        text-align: left;
+    }
+
+    .container .serviços .item .circulo{
+        width: 40px;
+        height: 40px;
+    }
+
+    .container .serviços .item .circulo .icon{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .container .serviços{
+        width: 90%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    footer{
+        width: 90%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando DOM</title>
+</head>
+<body>
+    <div>
+
+    </div>
+    <script>
+        var inputElement1 = document.createElement('input');
+        inputElement1.setAttribute('type', 'text');
+        inputElement1.setAttribute('name', 'nome');
+        inputElement1.setAttribute('id', 'nome');
+
+        inputElement1.setAttribute('type', 'text');
+        inputElement1.setAttribute('name', 'sobrenome');
+        inputElement1.setAttribute('id', 'sobrenome');
+
+        var btnElement = document.createElement('button');
+        btnElement.setAttribute('name', 'botao');
+        btnElement.setAttribute('id', 'idbotao');
+
+        var btnLabel = document.createTextNode('Clique aqui');
+        btnElement.appendChild(btnLabel);
+
+        var input1Label = document.createTextNode('Nome');
+        var input2Label = document.createTextNode('Sobrenome');
+
+        var lineElement1 = document.createElement('br');
+        var lineElement2 = document.createElement('br');
+
+        var linkElement = document.createElement('a');
+        linkElement.setAttribute('href', 'https://www.campusrussas.ufc.br');
+        linkElement.setAttribute('title', 'Campus Russas');
+
+        var textLink = document.createTextNode('UFC - Russas');
+        linkElement.appendChild(textLink);
+
+        var divContainer = document.getElementById('exemplo');
+        divContainer.appendChild(input1Label);
+        divContainer.appendChild(inputElement1);
+        divContainer.appendChild(lineElement1);
+        divContainer.appendChild(input2Label);
+        divContainer.appendChild(inputElement2);
+        divContainer.appendChild(lineElement2);
+        divContainer.appendChild(btnElement);
+        divContainer.appendChild(linkElement);
+
+        divContainer.style.backgroundColor = 'gray';
+        divContainer.style.height = '100px';
+        divContainer.style.width = '300px';
+        divContainer.style.backgroundColor = 'gray';
+    </script>
+</body>
+</html>
